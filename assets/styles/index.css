@@ -1,0 +1,5 @@
+/*This imports all the styles in base-styles.css into this css file. When you link this file to your index.html
+  you will also be linking to the base-styles.css. You should add this statement to each of your indiviual page .css files*/
+@import url(base-styles.css);
+
+/* Use this css file to make specific styles and adjustments to the base styles for your index.html */

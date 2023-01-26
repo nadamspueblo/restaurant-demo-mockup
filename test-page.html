@@ -10,18 +10,21 @@
 <body>
   <script src="assets/js/base-scripts.js"></script>
   <h1>Dev Test Page</h1>
-  <div class="panel secondary-bg-color">
-    <h3>Test heading</h3>
-    <p>This is some test text</p>
-  </div>
-  <div class="panel secondary-bg-color">
-    <h3>Test heading</h3>
-    <p>This is some test text</p>
-  </div>
-  <div class="panel secondary-bg-color">
-    <h3>Test heading</h3>
-    <p>This is some test text</p>
-  </div>
+  <section class="flex-horz secondary-bg-color">
+    <div class="card tertiary-bg-color">
+      <h3>Test heading</h3>
+      <p>This is some test text</p>
+    </div>
+    <div class="card tertiary-bg-color">
+      <h3>Test heading</h3>
+      <p>This is some test text</p>
+    </div>
+    <div class="card tertiary-bg-color">
+      <h3>Test heading</h3>
+      <p>This is some test text</p>
+    </div>
+  </section>
+
   <hr>
   <div class="accordion primary-bg-color" onclick="showPanel('test-panel')">Accordion heading</div>
   <div id="test-panel" class="panel hidden-panel secondary-bg-color">

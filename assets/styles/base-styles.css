@@ -1,16 +1,31 @@
+/********** Theme color variable defs ****************/
+/* Use this section to define CSS variables for colors or other purporses */
+/* The colors I define would be for a dark theme */
 :root {
   --primary-bg-color: rgb(40, 40, 40);
   --primary-text-color: rgb(220, 220, 220);
-  --secondary-bg-color: rgb(60, 60, 60);
+  
+  --secondary-bg-color: rgb(80, 80, 80);
+  --secondary-text-color: rgb(180, 180, 180);
+  
+  --tertiary-bg-color: rgb(120, 120, 120);
+  
   --accent-color: rgb(0, 125, 200);
 }
 
-/* Removes default margins */
-body, h1, h2, h3 {
+
+/************************** Base style elements ***********************/
+/* These selectors style specific elements such as the body, section, etc. in every page */
+/* Use these sparingly, it is better to style elements by class or id */
+
+/* Removes default margins for the listed elements */
+body,
+h1,
+h2,
+h3 {
   margin: 0px;
 }
 
-/* Base style elements */
 
 body {
   background-color: var(--primary-bg-color);
@@ -18,7 +33,10 @@ body {
 }
 
 
-/* Base style classes */
+/************************ Base style classes ************************/
+
+/* Color classes - use these to add theme colors to elements based on the theme color variables */
+/* Add your own color classes, try to follow my naming scheme */
 
 .primary-bg-color {
   background-color: var(--primary-bg-color);
@@ -28,11 +46,62 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
+.tertiary-bg-color {
+  background-color: var(--tertiary-bg-color);
+}
+
+.accent-bg-color {
+  background-color: var(--accent-color);
+}
+
+.primary-text-color {
+  color: var(--primary-text-color);
+}
+
+.accent-text-color {
+  color: var(--accent-color);
+}
+
+/**************** Shape classes *****************/
+/* The define some basic size and shapes */
+/* Modify these and add your own to set size, padding, margin, border style and radius */
+
 .panel {
   padding: 10px 20px;
   width: 100%;
   margin: 4px 0px;
 }
+
+.card {
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 4px 0px;
+  border-radius: 4px;
+}
+
+/***************** Display classes *****************/
+/* These change how the element displays its contents (children) */
+/* Add to this section to control how elements are displayed, you might a .center class for example */
+
+.flex-horz {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-vert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/***************** Special classes *****************/
+/* These classes are used for elements that have some special behviour */
+/* Use this section to define classes for animations, hover effects, and to work with JavaScript */
 
 .accordion {
   cursor: pointer;
