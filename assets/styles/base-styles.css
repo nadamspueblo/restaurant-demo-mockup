@@ -1,0 +1,50 @@
+:root {
+  --primary-bg-color: rgb(40, 40, 40);
+  --primary-text-color: rgb(220, 220, 220);
+  --secondary-bg-color: rgb(60, 60, 60);
+  --accent-color: rgb(0, 125, 200);
+}
+
+/* Removes default margins */
+body, h1, h2, h3 {
+  margin: 0px;
+}
+
+/* Base style elements */
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+
+/* Base style classes */
+
+.primary-bg-color {
+  background-color: var(--primary-bg-color);
+}
+
+.secondary-bg-color {
+  background-color: var(--secondary-bg-color);
+}
+
+.panel {
+  padding: 10px 20px;
+  width: 100%;
+  margin: 4px 0px;
+}
+
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: large;
+}
+
+.hidden-panel {
+  display: none;
+  overflow: hidden;
+}
